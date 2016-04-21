@@ -17,7 +17,7 @@ var url = require('url');
 var csrf = require('csurf');
 var socket = require('./socket.js');
 
-var dbURL = process.env.MONGOLAB_URI || "mongodb://localhost/MVCP";
+var dbURL = process.env.MONGODB_URI || "mongodb://localhost/MVCP";
 
 var db = mongoose.connect(dbURL, function(err){
    if(err){
